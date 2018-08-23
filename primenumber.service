@@ -1,0 +1,12 @@
+[Unit]
+Description=Prime number generator service
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/usr/bin/python /home/ubuntu/primenumber.py
+WorkingDirectory=/home/ubuntu
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+# Update the linux distro
+sudo yum update -y
+
+# Update the pip installer
+sudo pip install --upgrade pip
+
+# Install the flask web server python package
+sudo pip install flask
+
+# Retrieve the primenumber.py and primenumber.service using wget
+
+# Test run it using
+python primenumber.py
+
+# Install the python program as a service
+Done by useng the file primenumber.service and the following commands:
+sudo cp primenumber.service /etc/systemd/system
+sudo systemctl start primenumber.service
+systemctl status primenumber.service
+
+# URL's
+http://<address>:8899
+http://<address>:8899/primenumber/from/2/to/1000
